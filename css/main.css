@@ -1,0 +1,167 @@
+/* line 1, main.sass */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box; }
+
+/* line 8, main.sass */
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  font-family: Lato;
+  background-color: #ededed;
+  color: #333; }
+
+/* line 16, main.sass */
+#wrap {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+  box-shadow: 0 0 15px silver; }
+
+/* line 22, main.sass */
+header {
+  width: inherit;
+  height: 30vh;
+  background-color: #444; }
+  /* line 27, main.sass */
+  header nav {
+    height: 60px;
+    background-color: #222;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    /* line 33, main.sass */
+    header nav .nav-list {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      /* line 37, main.sass */
+      header nav .nav-list li {
+        height: 60px;
+        line-height: 60px; }
+      /* line 41, main.sass */
+      header nav .nav-list a {
+        color: silver;
+        padding: 0 15px;
+        -webkit-transition: color 0.25s linear;
+                transition: color 0.25s linear;
+        display: block; }
+        /* line 47, main.sass */
+        header nav .nav-list a:hover {
+          color: whitesmoke; }
+    /* line 50, main.sass */
+    header nav .active {
+      border-bottom: 2px solid #555; }
+
+/* line 54, main.sass */
+h1 {
+  text-align: right;
+  border-bottom: 2px solid #333;
+  font-family: Montserrat;
+  margin-bottom: 40px; }
+
+/* line 60, main.sass */
+main {
+  min-height: 70vh;
+  width: inherit;
+  background-color: #fff;
+  padding: 50px; }
+
+/* line 67, main.sass */
+footer {
+  width: inherit;
+  height: 60px;
+  background-color: #222; }
+
+/* line 72, main.sass */
+form {
+  margin: 10px 50px 50px 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  /* line 76, main.sass */
+  form dl {
+    width: 50%; }
+  /* line 79, main.sass */
+  form input {
+    margin: 5px 0 20px 30px;
+    width: 200px;
+    height: 25px;
+    padding-left: 5px;
+    border: 1px solid silver;
+    border-radius: 2px; }
+  /* line 87, main.sass */
+  form label {
+    font-weight: bolder; }
+
+/* line 90, main.sass */
+input[type="button"] {
+  height: 30px;
+  color: white;
+  background-color: #333;
+  border: none;
+  padding: 10px 50px; }
+  /* line 97, main.sass */
+  input[type="button"]:active {
+    background-color: #222; }
+
+/* line 100, main.sass */
+#dropZone {
+  width: 50%;
+  height: 300px;
+  border: 2px solid silver;
+  background-color: #fefefe;
+  position: relative;
+  overflow: scroll; }
+  /* line 108, main.sass */
+  #dropZone img {
+    width: 100%;
+    height: inherit; }
+  /* line 112, main.sass */
+  #dropZone span {
+    font-style: italic;
+    color: #dedede;
+    position: absolute;
+    right: 10px;
+    bottom: 10px; }
+
+/* line 119, main.sass */
+#content {
+  padding: 30px; }
+  /* line 122, main.sass */
+  #content .item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 20px;
+    background-color: #ededed;
+    box-shadow: 0 0 5px silver;
+    border-radius: 2px;
+    height: 250px;
+    margin-bottom: 30px; }
+    /* line 131, main.sass */
+    #content .item ul {
+      width: 70%; }
+    /* line 134, main.sass */
+    #content .item img {
+      background-color: pink;
+      width: 30%;
+      outline: 5px solid whitesmoke; }
+
+/*# sourceMappingURL=main.css.map */
