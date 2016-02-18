@@ -13,24 +13,45 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body onload="PartStore()">
     <div id="wrap">
-        <!--Title, Publisher, Date Published, ISBN-->
         <header>
             <nav>
                 <ul class="nav-list">
-                    <li><a href="shapes.html">Shapes</a></li>
-                    <li class="active"><a href="render.html">Render</a></li>
+                    <li class="active"><a href="shapes.html">Shapes</a></li>
+                    <li><a href="render.html">Render</a></li>
                 </ul>
             </nav>
         </header>
         
         <main>
-            <h1>Canvas</h1>
+            <h1>Store Shape</h1>
             
             <form>
-                
+                <dl>
+                    <dt><label for="center">Center Point: </label></dt>
+                    <dd><input type="number" id="center" name="center" placeholder="600 x 600" /></dd>
+                    
+                    <dt><label for="sw">Side Width: </label></dt>
+                    <dd><input type="number" id="sw" name="sw" placeholder="Side Width" /></dd>
+                    
+                    <dt><label for="lw">Line Width: </label></dt>
+                    <dd><input type="number" id="lw" name="lw" placeholder="Line Width" /></dd>
+                    
+                    <dt><label for="cl">Square Color: </label></dt>
+                    <dd class="inline">
+                        <input type="color" id="cl1" name="cl" />
+                        <input type="color" id="cl2" name="cl" />
+                        <input type="color" id="cl3" name="cl" />
+                        <input type="color" id="cl4" name="cl" />
+                    </dd>
+                    
+                    <dt><label for="inst">Instances: </label></dt>
+                    <dd><input type="number" id="inst" name="inst" placeholder="Square Instance" /></dd>
+                </dl>
             </form>
+            
+            <input type="button" id="btnRender" value="Render" />
         </main>
         
         <footer></footer>

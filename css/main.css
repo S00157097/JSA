@@ -160,8 +160,23 @@ input[type="button"] {
       width: 70%; }
     /* line 134, main.sass */
     #content .item img {
-      background-color: pink;
+      background-color: white;
       width: 30%;
       outline: 5px solid whitesmoke; }
+
+/* line 139, main.sass */
+dd.inline {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+/* line 142, main.sass */
+#can {
+  border: 1px solid silver;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 0 15px silver inset;
+  overflow: hidden; }
 
 /*# sourceMappingURL=main.css.map */
