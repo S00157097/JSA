@@ -4,11 +4,12 @@ document.querySelector('#btnRetrieve').addEventListener('click', function () {
     var item, ul, image, check, li = [];
     
     if (document.querySelectorAll('.item').length === 0) {
-        for (var i = 0; i < localStorage.length; i++) {
+        for (var i = 0; i < localStorage.length - 1; i++) {
             
-            var data = JSON.parse(localStorage.getItem('book['+ i +']')); /**/
+            var data = JSON.parse(localStorage.getItem(localStorage.key(i))); /**/
             item = document.createElement('div');
-            item.setAttribute('data-key', 'book['+ i +']');
+            item.setAttribute('data-key', localStorage.key(i));
+            item.setAttribute('data-title', data.Title);
             item.classList.add('item');
             item.style.position = 'relative';
             
@@ -73,9 +74,24 @@ document.querySelector('#btnRemove').addEventListener('click', function () {
     
     for (var i = 0; i < toDelete.length; i++)
         localStorage.removeItem(toDelete[i]);
-    
-    /*for (var key in localStorage)
-        key = '';*/
 
+}, false);
+
+
+document.querySelector('#btnRem').addEventListener('click', function () {
+    'use strict';
+    
+    var text = document.querySelector('#txtRemove').value;
+    var items = document.querySelectorAll('.item');
+    
+    
+    for(var i = 0; i < items.length; i++) {
+        if(items[i].getAttribute('data-title') === text) {
+            localStorage.removeItem(items[i].getAttribute('data-key'));
+            items[i].parentNode.removeChild(items[i]); 
+        }
+    }
     
 }, false);
+
+
